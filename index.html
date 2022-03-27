@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="padding:20px;">
+    <div style="text-align: center;">
+    <h1>JAVASCRIPT</h1>
+    <span>Date - 16<sup>th</sup>March 2022</span></div>
+    <hr/>
+
+    <h3>JavaScript</h3>
+    <p>JavaScript is a dynamically typed language,
+      It means that JS does not require the explicit declaration of the variables before they're used.</p>
+      <p>JavaScript is a single-threaded,
+        which means it has only one call stack that is used to execute the program.</p>
+        <p>
+            Javascript is a synchronous single threaded language
+            single threaded means javascript can only execute one command a time.
+             when it comes to synchronous single threaded it means,
+             javascript can only execute one command at a time and in a specific order.
+             that means that it can only go to the next line once the current line has been finished executing.
+        </p>
+    <h3>JavaScript Execution Context</h3>
+
+       <span> Two Phases of Execution Context -</span>
+        <br/> <br/>
+        <h5>Creation Phase</h5>
+        <p>
+            This is the initial phase of Global execution content.Here all variables and functions are given memory allocation ie. 
+            stored in heap memory and values assigned as undefined.The global execution context is pushed into the callstack and it remains there until all the code gets executed.
+            After complete execution global execution context gets popped from callstack.
+        </p>
+        <h5>Execution Phase</h5>
+        <p>
+            This is the final phase of global execution context.Here code is executed line by line and the original values are assigned to the variables and to the functions at this stage.
+             When function gets executed a seperate execution context gets executed ie. function execution which is pushed into the stack ie.
+              at the top of the global execution context.Here the code inside the function gets excuted.
+               After the execution of the function the function execution context gets popped out of the callstack and the rest of the code gets excuted.
+        </p>
+    <h3>JavaScript Runtime Environment</h3>
+    <p>The JavaScript runtime environment provides access to built-in libraries and objects
+        that are available to a program so that it can interact with the outside world and make the code work.
+         In the context of a browser this is comprised of the following elements:
+         <ul>
+            <li>The JavaScript engine (which in turn is made up of the heap and the call stack)</li> 
+             <li>Web APIs</li> 
+            <li>The callback queue</li>
+             <li>The event loop</li> 
+            </ul>
+         It’s good to be mindful that the runtime environment can take on different forms based on the context,
+         for example, the runtime environment in a browser is very different from that of Node.js.
+         These differences are primarily at the implementation level, 
+         so most of the following concepts are still relevant.</p>
+    <h3>JavaScript Engine</h3>
+    <p>
+        The JavaScript Engine is a program whose responsibility is to execute JavaScript code.
+        All modern browsers come with their own version of the JavaScript Engine but the most popular one is Google’s V8 Engine.
+        Google’s V8 engine powers Google Chrome browsers, as well as, Node.js.
+         Node.js is a JavaScript runtime that is used to build server-side applications outside of the browser.
+    </p>
+   <h6> List of the different JavaScript Engines for each major Internet browser:</h6>
+   <ul type="none">
+    <li> V8 – Open-source JavaScript Engine developed by Google for Chrome</li>
+    <li>SpiderMonkey – The JavaScript Engine powering Mozilla Firefox</li>
+    <li>JavaScriptCore – Open-source JavaScript Engine developed by Apple for Safari</li>
+    <li> Rhino – Open-source JavaScript Engine managed by Mozilla foundation for FireFox</li>
+    <li>Chakra – A JavaScript Engine for Microsoft Edge</li>
+    <li>JerryScript – A JavaScript engine for the Internet of Things (Iot).</li>
+</ul>
+
+</body>
+</html>
